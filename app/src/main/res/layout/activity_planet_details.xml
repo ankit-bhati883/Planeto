@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlanetDetails"
+
+    android:orientation="vertical"
+    android:background="@color/primary">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_info"
+        android:adjustViewBounds="true"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical">
+   <ImageView
+       android:id="@+id/planetimg_info"
+       android:layout_width="110dp"
+       android:layout_height="110dp"
+       android:layout_gravity="center_horizontal"
+       android:src="@drawable/ic_earth"
+       android:elevation="40dp"
+
+       />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+
+        android:backgroundTint="@color/secondry"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="60dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/title_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/poppins_semibold"
+                android:text="EARTH"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/galaxy_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="MILKYWAY GALAXY"
+                android:textColor="@color/subtext"
+                android:textSize="14sp"
+                />
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#03A9F4"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_distance"
+                    />
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/subtext"
+                    android:textSize="14sp"
+                    android:text="54.6 Km"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_gravity"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:id="@+id/gravity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="@color/subtext"
+                    android:textSize="14sp"
+                    android:text="3.7m/s"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="14dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OVERVIEW"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:letterSpacing="0.1"
+                android:fontFamily="@font/poppins_semibold"/>
+            <View
+                android:layout_width="30dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#03A9F4"
+                />
+            <TextView
+                android:id="@+id/overview_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="asdfgjklkjkhhfdfvkklkhjhfgdcv
+gfcvbnlkfvbndcvjjvvbjjvohggpgfiopkjhgvb;lkjhgcvbl"
+                android:textSize="13sp"
+                android:fontFamily="@font/poppins_regular"
+                android:letterSpacing="0.1"
+                android:lineSpacingExtra="1dp"
+                android:textColor="@color/subtext"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/button_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
+        android:text="BOOK YOUR RIDE"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>
+
+
+</LinearLayout>
